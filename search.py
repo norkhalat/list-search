@@ -4,5 +4,9 @@ def index(number, numbers):
     The function returns -1 if the number is not present in the numbers,
     or the list is empty.
     '''
-
-    return -1
+    if number not in numbers or numbers == []:
+        return -1
+    for x in range(len(numbers)):
+        if number == numbers[x]:
+            return x
+    
